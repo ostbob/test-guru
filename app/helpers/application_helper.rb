@@ -3,7 +3,7 @@ module ApplicationHelper
     Time.new.year
   end
 
-  def github_url(author, repo, a_parameter)
-    link_to a_parameter, "https://github.com/#{author}/#{repo}", target: '_blank'
+  def github_url(author, repo, tag_body)
+    link_to tag_body, "https://github.com/#{author}/#{repo}", target: '_blank'
   end
 end
