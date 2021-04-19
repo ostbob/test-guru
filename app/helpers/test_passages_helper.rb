@@ -1,7 +1,7 @@
 module TestPassagesHelper
 
   def success_color_string(test_passage)
-    if @test_passage.successful?
+    if test_passage.successful?
       string_color = 'green'
       result_string = 'Test was passed.'
     else
