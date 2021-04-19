@@ -8,6 +8,6 @@ class Answer < ApplicationRecord
   private
 
   def answers_count
-    errors.add(:self, 'Question must have only 1-4 answers') unless (1..3).include?(question.answers.count)
+    errors.add(:self, 'Question must have only 1-4 answers') unless (0..3).include?(question.answers.count)
   end
 end
