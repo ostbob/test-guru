@@ -1,2 +1,112 @@
 ru:
   hello: "Привет мир!"
+  logout: "Выйти"
+  edit: 'Редактировать'
+  back: 'Назад'
+  login: "Войти"
+  register: "Зарегистрироваться"
+  welcome: "Добро пожаловать, "
+  guru: "Гуру"
+  test_was_passed: "Тест успешно пройден."
+  test_was_failed: "Тест провален."
+  questions_correct: "вопросов были верны"
+
+  helpers:
+    select:
+      prompt: "Выберите категорию"
+    submit:
+      question:
+        create: "Создать новый вопрос"
+        update: "Обновить вопрос"
+
+      test:
+        create: "Создать тест"
+        update: "Обновить тест"
+    label:
+      test:
+        title: "Название"
+        level: "Уровень"
+        category_id: "Категория"
+
+  shared:
+    errors:
+      header:
+        few: "Обнаружено %{count} ошибки"
+        many: "Обнаружено %{count} ошибок"
+        one: "Обнаружена %{count} ошибка"
+        other: "Обнаружено %{count} ошибки"
+
+  admin:
+    nav:
+      header: "Панель админа TestGuru "
+      welcome: "Добро пожаловать, "
+      guru: " Гуру"
+    tests:
+      show:
+        title: "Название:"
+        level: "Уровень:"
+        new_question: "Новый вопрос"
+        questions: "Вопросы:"
+      index:
+        header: "Доступные тесты"
+        title: "Название:"
+        level: "Уровень:"
+        questions_count: "Кол-во вопросов:"
+        actions: "Действия:"
+        new_test: "Создать тест"
+      create:
+        success: "Тест был успешно создан"
+      test:
+        show: "Просмотреть"
+        edit: "Редактировать"
+        delete: "Удалить"
+        confirm: "Вы уверены?"
+      edit:
+        edit_test: "Редактировать тест"
+      new:
+        create_new_test: "Создать новый тест"
+
+    answers:
+      answer:
+        show: "Просмотреть"
+        edit: "Редактировать"
+        delete: "Удалить"
+        confirm: "Вы уверены?"
+      show:
+        question: "Вопрос:"
+        answer: "Ответ:"
+        correct: "Верный:"
+    questions:
+      show:
+        header: "Ответы:"
+        new_answer: "Создать новый ответ"
+      question:
+        show: "Просмотреть"
+        edit: "Редактировать"
+        delete: "Удалить"
+        confirm: "Вы уверены?"
+
+  tests:
+    index:
+      header: "Доступные тесты"
+      title: "Название:"
+      level: "Уровень:"
+      questions_count: "Кол-во вопросов:"
+      actions: "Действия:"
+    test:
+      start: "Пройти тест"
+
+  test_passages:
+    show:
+      test_passing: "Прохождение теста: "
+      total_questions: "Общее кол-во вопросов"
+      current_question: "Текущий вопрос"
+      next: "Следующий вопрос"
+    result:
+      header: "Тест %{title} завершён"
+      go_back_to_tests: "Вернуться обратно к тестам"
+      test_passage_result: "Результат прохождения теста"
+
+  tests_mailer:
+    completed_test:
+      subject: "Вы успешно завершили тест на TestGuru!"
