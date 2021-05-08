@@ -10,6 +10,7 @@ en:
   test_was_passed: "Test was passed."
   test_was_failed: "Test was failed."
   questions_correct: "questions were correct"
+  admin_panel: "Admin"
 
   helpers:
     select:

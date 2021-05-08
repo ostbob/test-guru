@@ -10,6 +10,7 @@ ru:
   test_was_passed: "Тест успешно пройден."
   test_was_failed: "Тест провален."
   questions_correct: "вопросов были верны"
+  admin_panel: "Админ"
 
   helpers:
     select:
