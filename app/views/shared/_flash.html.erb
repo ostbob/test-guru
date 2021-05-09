@@ -1,5 +1,5 @@
 <% flash.each do |key, message| %>
-  <div class="alert <%= bootstrap_alert_class(key) %>">
+  <div class="alert <%= ApplicationHelper::BOOTSTRAP_ALERT_CLASSES[key.to_sym] %>">
     <%= content_tag :p, message %>
   </div>
 <% end %>

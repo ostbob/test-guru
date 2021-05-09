@@ -1,4 +1,10 @@
 module ApplicationHelper
+
+  BOOTSTRAP_ALERT_CLASSES = {alert: 'alert-warning',
+                             error: 'aler-danger',
+                             success: 'alert-success',
+                             notice: 'alert-info' }
+
   def footer_year
     Time.new.year
   end
@@ -15,16 +21,4 @@ module ApplicationHelper
     end
   end
 
-  def bootstrap_alert_class(flash_message_type)
-    case flash_message_type
-      when 'alert'
-        'alert-warning'
-      when 'error'
-        'alert-danger'
-      when 'success'
-        'alert-success'
-      when 'notice'
-        'alert-info'
-    end
-  end
 end
