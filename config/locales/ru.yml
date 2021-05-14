@@ -107,6 +107,10 @@ ru:
       header: "Тест %{title} завершён"
       go_back_to_tests: "Вернуться обратно к тестам"
       test_passage_result: "Результат прохождения теста"
+    gist:
+      success: "Gist успешно сохранён!"
+      failure: "Во время сохранения Gist произошла ошибка."
+
 
   tests_mailer:
     completed_test:

@@ -106,6 +106,9 @@ en:
       header: "Test %{title} was completed"
       go_back_to_tests: "Go back to tests"
       test_passage_result: "Test passage result"
+    gist:
+      success: "Gist was successfully saved"
+      failure: "An error occured while gist saving"
 
   tests_mailer:
     completed_test:
