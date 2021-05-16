@@ -39,6 +39,12 @@ gem 'devise', '~> 4.0'
 # NETWORKING
 gem 'faraday'
 
+# Github API
+gem 'octokit'
+
+# Shim to load environment variables from .env to ENV in development
+gem 'dotenv-rails', groups: [:development, :test]
+
 # LOCALIZATION
 gem 'rails-i18n', '~> 5.1'
 

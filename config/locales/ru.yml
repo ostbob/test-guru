@@ -103,12 +103,13 @@ ru:
       total_questions: "Общее кол-во вопросов"
       current_question: "Текущий вопрос"
       next: "Следующий вопрос"
+      gist_question: "Сохранить вопрос в Github Gist"
     result:
       header: "Тест %{title} завершён"
       go_back_to_tests: "Вернуться обратно к тестам"
       test_passage_result: "Результат прохождения теста"
     gist:
-      success: "Gist успешно сохранён!"
+      success: "Gist успешно сохранён! Ссылка: %{url}"
       failure: "Во время сохранения Gist произошла ошибка."
 
 

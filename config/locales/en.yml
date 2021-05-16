@@ -102,12 +102,13 @@ en:
       total_questions: "Total questions"
       current_question: "Current question"
       next: "Next"
+      gist_question: "Save question to Github Gist"
     result:
       header: "Test %{title} was completed"
       go_back_to_tests: "Go back to tests"
       test_passage_result: "Test passage result"
     gist:
-      success: "Gist was successfully saved"
+      success: "Gist was successfully saved! Url link:  %{url}"
       failure: "An error occured while gist saving"
 
   tests_mailer:
