@@ -21,4 +21,8 @@ module ApplicationHelper
     end
   end
 
+  def gist_hash(gist_url)
+    gist_url['https://gist.github.com/'.length..]
+  end
+
 end
