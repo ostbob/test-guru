@@ -85,6 +85,12 @@ en:
         edit: "Edit"
         delete: "Delete"
         confirm: "Are you sure?"
+    gists:
+      index:
+        header: "All Gists:"
+        question: "Question"
+        url: "Url gist"
+        user_email: "E-mail"
 
   tests:
     index:
@@ -102,10 +108,14 @@ en:
       total_questions: "Total questions"
       current_question: "Current question"
       next: "Next"
+      gist_question: "Save question to Github Gist"
     result:
       header: "Test %{title} was completed"
       go_back_to_tests: "Go back to tests"
       test_passage_result: "Test passage result"
+    gist:
+      success: "Gist was successfully saved! Url link:  %{url}"
+      failure: "An error occured while gist saving"
 
   tests_mailer:
     completed_test:
