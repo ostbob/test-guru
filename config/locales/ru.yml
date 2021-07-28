@@ -66,6 +66,8 @@ ru:
         edit_test: "Редактировать тест"
       new:
         create_new_test: "Создать новый тест"
+      form_inline:
+        submit: "Ок"
 
     answers:
       answer:
