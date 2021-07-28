@@ -139,6 +139,12 @@ GEM
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    octicons (14.1.0)
+      nokogiri (>= 1.6.3.1)
+    octicons_helper (14.1.0)
+      actionview
+      octicons (= 14.1.0)
+      railties
     octokit (4.21.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -265,6 +271,7 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   listen (>= 3.0.5, < 3.2)
+  octicons_helper
   octokit
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.5)
