@@ -1,0 +1,14 @@
+<div class="progress">
+  <%= content_tag(:div,
+                  '0%',
+                  class: 'progress-bar',
+                  id: 'testPassageProgress',
+                  'aria-valuemax': 100,
+                  'aria-valuemin': 0,
+                  'aria-valuenow': 0,
+                  role: 'progressbar',
+                  data: {
+                    question_number: @test_passage.current_question_number,
+                    questions_count: @test_passage.test.questions.count
+                  }) %>
+</div>
