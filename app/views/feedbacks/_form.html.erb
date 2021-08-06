@@ -1,0 +1,27 @@
+<div class="row mt-3">
+  <div class="col col-md-8">
+    <div class="card border-primary">
+      <div class="card-body">
+
+        <%= form_with(model: feedback, local: true) do |form| %>
+          <%= render 'shared/errors', resource: @feedback %>
+          <div class="form-group">
+
+          <p>
+            <%= form.label :title %><br>
+            <%= form.text_field :title, class: 'form-control' %>
+          </p><br>
+
+          <p>
+            <%= form.label :body %><br>
+            <%= form.text_area :body, class: 'form-control' %>
+          </p><br>
+
+          <%= form.submit 'Send feedback', class: 'btn btn-primary'%>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
