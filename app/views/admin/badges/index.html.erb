@@ -1,0 +1,26 @@
+<h1><%= t('.header') %></h1>
+
+<p><mark><strong>
+    <%= link_to t('.new_badge'), new_admin_badge_path %>
+</strong></mark></p>
+
+<%= render 'shared/errors', resource: @badge %>
+
+<div class="row mt-5">
+  <div class="col-md-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">
+            <%= t('.name') %>
+          </th>
+          <th scope="col"><%= t('.image') %></th>
+          <th scope="col" colspan="4"><%= t('.actions') %></th>
+        </tr>
+      </thead>
+      </tbody>
+        <%= render @badges %>
+      </tbody>
+    </table>
+  </div>
+</div>
