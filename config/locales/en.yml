@@ -11,6 +11,7 @@ en:
   test_was_failed: "Test was failed."
   questions_correct: "questions were correct"
   admin_panel: "Admin"
+  badges_panel: "Badges"
 
   helpers:
     select:
@@ -66,6 +67,28 @@ en:
         create_new_test: "Create new test"
       form_inline:
         submit: "Ok"
+    badges:
+      show:
+        name: "Name:"
+        image: "Image:"
+        new_badge: "New badge"
+      index:
+        header: "Badges"
+        name: "Name:"
+        image: "Image:"
+        actions: "Actions:"
+        new_badge: "New badge"
+      create:
+        success: "Badge was successfully created"
+      badge:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure?"
+      edit:
+        edit_badge: "Edit badge"
+      new:
+        create_new_badge: "Create new badge"
 
     answers:
       answer:
@@ -103,6 +126,13 @@ en:
       actions: "Actions:"
     test:
       start: "Start"
+  badges:
+    index:
+      header: "Your Badges"
+      header_all: "All existing Badges"
+      name: "Name:"
+      image: "Image:"
+    badge:
 
   test_passages:
     show:

@@ -11,6 +11,7 @@ ru:
   test_was_failed: "Тест провален."
   questions_correct: "вопросов были верны"
   admin_panel: "Админ"
+  badges_panel: "Значки"
 
   helpers:
     select:
@@ -69,6 +70,29 @@ ru:
       form_inline:
         submit: "Ок"
 
+    badges:
+      show:
+        name: "Название:"
+        image: "Картинка:"
+        new_badge: "Новый значок"
+      index:
+        header: "Значки"
+        name: "Название:"
+        image: "Картинка:"
+        actions: "Действия:"
+        new_badge: "Новый значок"
+      create:
+        success: "Новый значок был успешно создан"
+      badge:
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+        confirm: "Вы уверены?"
+      edit:
+        edit_badge: "Редактировать значок"
+      new:
+        create_new_badge: "Создать новый значок"
+
     answers:
       answer:
         show: "Просмотреть"
@@ -104,6 +128,13 @@ ru:
       actions: "Действия:"
     test:
       start: "Пройти тест"
+  badges:
+    index:
+      header: "Ваши значки"
+      header_all: "Существующие значки"
+      name: "Название:"
+      image: "Картинка:"
+    badge:
 
   test_passages:
     show:
