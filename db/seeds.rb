@@ -98,6 +98,6 @@ answers = Answer.create!([
 badges = Badge.create!([
   { name: 'First try is successful!', image: 'badges/white.jpeg', rule: 'test_first_try_successful', value: ''},
   { name: 'All category tests are completed!', image: 'badges/blue.png', rule: 'category_tests_completed', value: 'Programming Language'},
-  { name: 'All level tests are completed!', image: 'badges/golden.png', rule: 'level_tests_completed', value: '1'}
+  { name: 'All level tests are completed!', image: 'badges/golden.png', rule: 'level_tests_completed', value: 'easy'}
 ])
 

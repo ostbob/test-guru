@@ -1,10 +1,10 @@
 class Admin::BadgesController < Admin::BaseController
 
-  before_action :set_badges, only: %i[index]
   before_action :find_badge, only: %i[show edit update destroy]
 
   def index
     @user_badges = current_user.badges
+    @badges = Badge.all
   end
 
   def show
@@ -41,10 +41,6 @@ class Admin::BadgesController < Admin::BaseController
   end
 
   private
-
-  def set_badges
-    @badges = Badge.all
-  end
 
   def find_badge
     @badge = Badge.find(params[:id])

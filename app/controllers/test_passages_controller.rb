@@ -14,7 +14,7 @@ class TestPassagesController < ApplicationController
 
     if @test_passage.completed?
       if @test_passage.successful?
-        @test_passage.update_attribute(:success_flg, true)
+        @test_passage.update_attribute(:success, true)
         BadgeIssuerService.new(@test_passage).call
       end
 
