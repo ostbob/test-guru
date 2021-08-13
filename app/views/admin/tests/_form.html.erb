@@ -22,6 +22,12 @@
             <%= form.collection_select :category_id, Category.all, :id, :title, {prompt: true}, {class: "form-control"} %>
           </p><br>
 
+          <p>
+            <%= form.label :allotted_time %><br>
+            <%= form.number_field :allotted_time, class: 'form-control' %>
+          </p><br>
+
+
           <%= form.submit "Enter", class: 'btn btn-primary' %>
           </div>
         <% end %>
