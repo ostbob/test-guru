@@ -51,6 +51,7 @@ en:
         title: "Title:"
         level: "Level:"
         questions_count: "Questions count:"
+        allotted_time: "Allotted time (in minutes):"
         actions: "Actions:"
         new_test: "New test"
       create:
@@ -100,6 +101,7 @@ en:
       title: "Title:"
       level: "Level:"
       questions_count: "Questions count:"
+      allotted_time: "Allotted time (minutes):"
       actions: "Actions:"
     test:
       start: "Start"
@@ -111,6 +113,7 @@ en:
       current_question: "Current question"
       next: "Next"
       gist_question: "Save question to Github Gist"
+      time_left: "Time left: "
     result:
       header: "Test %{title} was completed"
       go_back_to_tests: "Go back to tests"
