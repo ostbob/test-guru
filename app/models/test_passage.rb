@@ -40,16 +40,25 @@ class TestPassage < ApplicationRecord
   end
 
   def time_left
-    [deadline_time - Time.now, 0].max
+    deadline_time - Time.now
   end
 
   def time_left_string
-    (time_left/60).to_i.to_s + ':' + (time_left%60).to_i.to_s
+    timer = time_left
+    if timer > 0
+      (timer/60).to_i.to_s + ':' + (timer%60).to_i.to_s
+    else
+      '0:00'
+    end
   end
 
   def no_time?
     return false if test.allotted_time == nil
-    time_left == 0
+    if time_left > 0
+      false
+    else
+      true
+    end
   end
 
   private
