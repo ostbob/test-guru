@@ -25,6 +25,18 @@
         <p><%= form.submit t('.next'), class: 'btn btn-primary mt-5' %></p>
       <% end %>
 
+      <% if @test_passage.test.allotted_time != nil %>
+        </br></br>
+        <p>
+          <div class="hide" id="hidden_deadline_time"><%= @test_passage.deadline_time %></div>
+          <div class="hide" id="hidden_created_at"><%= @test_passage.created_at %></div>
+
+          <div>
+            <%= t('.time_left')%><span id="testPassageTimer"><%= @test_passage.time_left_string %></span>
+          </div>
+        </p>
+      <% end %>
+
     <% else %>
       <h2>No questions</h2>
     <% end %>

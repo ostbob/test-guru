@@ -5,6 +5,7 @@
   </td>
   <td class="align-middle"><%= test_level(test) %></td>
   <td class="align-middle"><%= questions_count(test) %></td>
+  <td class="align-middle"><%= test.allotted_time %></td>
   <td class="align-middle"><%= link_to t('.show'), admin_test_path(test) %></td>
   <td class="align-middle">
     <%= link_to t('.edit'),

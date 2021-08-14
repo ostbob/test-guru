@@ -23,8 +23,8 @@ users = User.create!([
 
 # Tests
 tests = Test.create!([
-  { title: 'Ruby', level: 1, category_id: categories[0].id, author_id: 1},
-  { title: 'Java', level: 2, category_id: categories[0].id, author_id: 1},
+  { title: 'Ruby', level: 1, category_id: categories[0].id, author_id: 1, allotted_time: 5},
+  { title: 'Java', level: 2, category_id: categories[0].id, author_id: 1, allotted_time: 1},
   { title: 'Russian History', level: 3, category_id: categories[1].id, author_id: 1},
   { title: 'American Civil War', level: 3, category_id: categories[1].id, author_id: 1},
   { title: 'Corporate Finance', level: 4, category_id: categories[2].id, author_id: 1}

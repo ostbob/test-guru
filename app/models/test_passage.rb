@@ -8,7 +8,7 @@ class TestPassage < ApplicationRecord
   SUCCESS_SCORE = 85
 
   def completed?
-    current_question.nil?
+    current_question.nil? || no_time?
   end
 
   def accept!(answer_ids)
@@ -32,6 +32,32 @@ class TestPassage < ApplicationRecord
       test.questions.count
     else
       test.questions.count - next_questions.count
+    end
+  end
+
+  def deadline_time
+    created_at + test.allotted_time.minutes
+  end
+
+  def time_left
+    deadline_time - Time.now
+  end
+
+  def time_left_string
+    timer = time_left
+    if timer > 0
+      (timer/60).to_i.to_s + ':' + (timer%60).to_i.to_s
+    else
+      '0:00'
+    end
+  end
+
+  def no_time?
+    return false if test.allotted_time == nil
+    if time_left > 0
+      false
+    else
+      true
     end
   end
 

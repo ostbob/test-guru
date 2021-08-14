@@ -54,6 +54,7 @@ ru:
         title: "Название:"
         level: "Уровень:"
         questions_count: "Кол-во вопросов:"
+        allotted_time: "Выделенное время (в минутах):"
         actions: "Действия:"
         new_test: "Создать тест"
       create:
@@ -125,6 +126,7 @@ ru:
       title: "Название:"
       level: "Уровень:"
       questions_count: "Кол-во вопросов:"
+      allotted_time: "Выделенное время (в минутах):"
       actions: "Действия:"
     test:
       start: "Пройти тест"
@@ -143,6 +145,7 @@ ru:
       current_question: "Текущий вопрос"
       next: "Следующий вопрос"
       gist_question: "Сохранить вопрос в Github Gist"
+      time_left: "Осталось времени: "
     result:
       header: "Тест %{title} завершён"
       go_back_to_tests: "Вернуться обратно к тестам"
